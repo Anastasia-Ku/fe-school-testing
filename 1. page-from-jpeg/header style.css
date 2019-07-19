@@ -1,0 +1,7 @@
+.header {
+    background: url(assets/background-image.jpg);
+    height: 200px;
+    background-size: 100%;
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+}

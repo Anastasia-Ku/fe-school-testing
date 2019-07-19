@@ -1,0 +1,13 @@
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    position: relative;
+    margin: 0 48px;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+
+

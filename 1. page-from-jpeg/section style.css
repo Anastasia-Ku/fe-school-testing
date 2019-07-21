@@ -1,8 +1,14 @@
 section {
     max-width: 984px;
     position: relative;
-    margin-bottom: 48px;
-    margin-top: 12px;
+    margin: 12px 24px 48px 24px;
+}
+
+@media all and (max-width: 480px) {
+    section {
+        margin:0 36px 0 18px;
+        max-width: 426px;
+    }
 }
 
 .section__logo {
@@ -13,6 +19,13 @@ section {
     border-radius: 50%;
 }
 
+@media all and (max-width: 480px) {
+.section__logo {
+    height: 90px;
+    top: -45px;
+    }
+}
+
 .section__h1 {
     font-size: 36px;
     margin: 48px 0;
@@ -21,18 +34,42 @@ section {
     line-height: 45px;
 }
 
+@media all and (max-width: 480px) {
+    .section__h1 {
+        font-size: 21px;
+    padding: 36px 0 0 0;
+    margin: 24px 0 30px 0;
+    line-height: 18px;
+    }
+}
+
 .section__content {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     margin-bottom: 48px;
+    flex-wrap: wrap;
+}
+
+@media all and  (max-width: 480px) {
+    .section__content {
+        flex-direction: column;
+        margin-bottom: 12px;
+    }
 }
 
 .section__h2 {
     font-size: 21px;
     font-weight: normal;
-    margin: 6px 0 30px 1px;
+    margin: 6px 0 30px 0px;
     line-height: 21px;
+}
+
+@media (max-width: 480px) {
+    .section__h2 {
+        line-height: 29px;
+        margin-bottom: 18px;
+    }
 }
 
 .section__text {
@@ -43,17 +80,38 @@ section {
     margin: 6px 0;
 }
 
+@media (max-width: 480px) {
+    .section__text {
+        line-height: 24px;
+    }
+}
+
 .section__content-description {
     display: flex;
     flex-direction: column;
     flex: 0 1 730px;
+    margin-right: 24px;
+}
+
+@media all and (max-width: 480px) {
+    .section__content-description {
+        margin-right:0px;
+        order:-1;
+        flex: 1 0;
+    }
 }
 
 .section__contacts {
-    margin-left: 24px;
     display: flex;
     flex-direction: column;
     flex: 0 0 180px;
+}
+
+@media all and (max-width: 480px) {
+    .section__contacts {
+        order: 1;
+        margin-top: 12px;
+    }
 }
 
 .section__contact-us {
@@ -67,6 +125,12 @@ section {
     flex-direction: row;
     align-items: center;
     padding: 6px 0px 12px 3px;
+}
+
+@media all and (max-width: 480px) {
+    .section__contact-person {
+        padding: 10px 0px 12px 0px;
+    }
 }
 
 .section__contact-person-avatar {
@@ -99,10 +163,17 @@ section {
     margin-top: 30px;
 }
 
+@media all and (max-width: 480px) {
+    .section__follow-us { 
+        margin-top: 24px;
+        margin-bottom: 21px;
+    }
+}
+
 .section__h2-follow {
     font-size: 21px;
     font-weight: normal;
-    margin: 6px 0 12px 2px;
+    margin: 6px 0 12px 0px;
     line-height: 23px;
 }
 
@@ -121,13 +192,29 @@ section {
     display: flex;
     flex-direction: column;
     margin-bottom: 18px;
+    width: 100%;
+}
+
+@media all and  (max-width: 480px) {
+    .section__area-of-focus {
+        order: 0;
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
 }
 
 .section__areas {
-    max-height: 90px;
+    max-width: 500px;
     display: flex;
-    flex-flow: column wrap;
-    width: fit-content;
+    flex-flow: row wrap;
+}
+
+
+@media all and  (max-width: 480px) {
+    .section__areas {
+        flex-direction:column;
+        flex-wrap:nowrap
+    }
 }
 
 .section__area-icon_internet {

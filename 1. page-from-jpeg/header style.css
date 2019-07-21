@@ -5,3 +5,9 @@
     background-position: 50% 40%;
     background-repeat: no-repeat;
 }
+
+@media all and (max-width: 480px) {
+    .header {
+        height: 93px;
+    }
+}

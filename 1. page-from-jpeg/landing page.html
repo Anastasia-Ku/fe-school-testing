@@ -9,72 +9,128 @@
         <link rel="stylesheet" href="body style.css">
         <link rel="stylesheet" href="header style.css">
         <link rel="stylesheet" href="main style.css">
+        <link rel="stylesheet" href="section style.css">
+        <link rel="stylesheet" href="footer style.css">
     </head>
     <body>
         <header class="header"></header>
         <main>
             <section>
-            <img src="assets/logo.jpg" alt="logo" class="main__logo">
-            <div>
-                <div>
-                        <h1>Lorem Ipsum</h1>
-                        <h2>About</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae egestas dolor. Mauris
-                            finibus risus feugiat aliquam dapibus. Praesent sit amet justo porta, faucibus mi in,
+            <img src="assets/logo.jpg" alt="logo" class="section__logo" >
+                <h1 class="section__h1">Lorem Ipsum</h1>
+            <div class="section__content">
+                <div class="section__content-description">
+                    <h2 class="section__h2">About</h2>
+                    <p class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae
+                        egestas dolor. Mauris finibus risus feugiat aliquam dapibus. Praesent sit amet justo porta, faucibus mi in,
                             sollicitudin turpis. Mauris eget pretium turpis, id luctus est. Integer tincidunt tellus
-                            ut volutpattincidunt. Ut purus nisl, lacinia vitae sollicitudin vitae, vehicula nec dolor.
+                            ut volutpat tincidunt. Ut purus nisl, lacinia vitae sollicitudin vitae, vehicula nec dolor.
                             Phasellus efficitur aliquam porta. Pellentesque laoreet, elit vestibulum facilisis finibus,
-                            tortor nisi hendreriterat,non gravida arcu dui et velit. In sit amet nisl tincidunt,
+                            tortor nisi hendrerit erat, non gravida arcu dui et velit. In sit amet nisl tincidunt,
                             venenatis orci ac, suscipit leo. In urna est, gravida varius ultrices at, consequat ac urna.
                             Ut pharetra, lorem ut egestas congue, ante arcu consequat eros, vel tristique ex elit eu
                             tortor. Morbi vestibulum diam nunc, euismod tempor arcu pharetra sit amet. Sed porttitor,
                             orci eget ultricies interdum, orci diam facilisis nisl, a finibus ante nisl at elit.
                             Curabitur eget lacus fermentum urna bibendum faucibus quis eget dui. Maecenas sed molestie
                             tellus. Integer facilisis dictum lectus quis lacinia.</p>
-                    </div>
-                <div>
-                        <div>
-                            <h2>Contact us</h2>
-                            <div>
-                                <img src="assets/gosling.jpg" alt="avatar">
-                                <div>
-                                    <div>Ivan Ivanov</div>
-                                    <div><a href="#">Ivan@mail.ru</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h2>Follow us</h2>
-                            <div>
-                                <img src="assets/web.svg">
-                                <a href="#">Lorem.com</a>
-                            </div>
-                            <div>
-                                <img src="assets/in.svg">
-                                <a hreg="#">linkedin.com/lorem</a>
+                </div>
+                <div class="section__contacts">
+                    <div class="section__contact-us">
+                        <h2 class="section__h2">Contact</h2>
+                        <div class="section__contact-person">
+                            <img src="assets/gosling.jpg" alt="avatar" class="section__contact-person-avatar">
+                            <div class="section__contact-person-data">
+                                <div>Ivan Ivanov</div>
+                                <a href="#" class="section__contact-link">ivan@mail.ru</a>
                             </div>
                         </div>
                     </div>
+                    <div class="section__follow-us">
+                        <h2 class="section__h2-follow">Follow us</h2>
+                        <div class="section__follow-link">
+                            <img src="assets/web.svg" class="section__contact-icons" alt="">
+                            <a href="#" class="section__contact-link-web">lorem.com</a>
+                        </div>
+                        <div class="section__follow-link">
+                            <img src="assets/in.svg" class="section__contact-icons" alt="">
+                            <a href="#" class="section__contact-link-web">linkedin.com/lorem</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                    <h2>Area of focus</h2>
-                    <div>
-                        <div>
-                            <img src="assets/internet.svg">
-                            <div>Economy, Politics & Environment</div>
+            </div>
+                <div class="section__area-of-focus">
+                    <h2 class="section__h2">Area of focus</h2>
+                    <div class="section__areas">
+                        <div class="section__area-items">
+                            <img src="assets/internet.svg" class="section__area-icon_internet" alt="">
+                            <div class="section__area-item-names">Economy, Politics & Environment</div>
                         </div>
-                        <div>
-                            <img src="assets/handshake.svg">
-                            <div>Public Administration & Non-Profit</div>
+                        <div class="section__area-items">
+                            <img src="assets/handshake.svg" class="section__area-icon_handshake" alt="">
+                            <div class="section__area-item-names">Public Administration & Non-Profit</div>
                         </div>
-                        <div>
-                            <img src="assets/culture.svg">
-                            <div>Health & Culture</div>
+                        <div class="section__area-items">
+                            <img src="assets/culture.svg" class="section__area-icons_culture" alt="">
+                            <div class="section__area-item-names">Health & Culture</div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer></footer>
-    </body>
-</html>
+        <footer class="footer">
+            <div class="footer__head-and-search">
+                <div class="footer__head">Lorem of Lorem Ipsum</div>
+                <form action="#" method="post" class="footer__search">
+                    <input type="search" name="search" placeholder="Search" class="footer__search-input" id="input">
+                    <label for="input"><img src="assets/search.svg" class="footer__search-icon"></label>
+                </form>
+            </div>
+            <div class="footer__items">
+                <div class="footer__item">
+                    <div class="footer__item-head">
+                        <img src="assets/item-logo.png" alt="item-logo" class="footer__item-logo">
+                        <div class="footer__item-h2">Lorem upsum Dolor</div>
+                    </div>
+                    <div class="footer__item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae egestas dolor 
+                    </div>
+                    <a href="#" class="footer__item-link">Public</a>
+                    <div class="empty-space"></div>
+                    <div class="footer__item-slogan">Lorem</div>
+                    <div class="footer__item-slogan-text">No fees & no time restricrions</div>
+                    <input type="button" value="View Details..." class="footer__item-button">
+                </div>
+                <div class="footer__item">
+                        <div class="footer__item-head">
+                            <img src="assets/item-logo.png" alt="item-logo" class="footer__item-logo">
+                            <div class="footer__item-h2">Lorem upsum Dolor</div>
+                        </div>
+                        <div class="footer__item-executor">Lorem by <strong>Lorem upsum Dolor</strong></div>
+                        <div class="footer__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae egestas dolor 
+                        </div>
+                        <div class="footer__item-format"><strong>Format:</strong> scv</div>
+                        <a href="#" class="footer__item-link">Public</a>
+                        <div class="footer__item-slogan">Lorem</div>
+                        <div class="footer__item-slogan-text">No fees & no time restricrions</div>
+                        <input type="button" value="View Details..." class="footer__item-button">
+                </div>
+                <div class="footer__item">
+                        <div class="footer__item-head">
+                            <img src="assets/item-logo.png" alt="item-logo" class="footer__item-logo">
+                            <div class="footer__item-h2">Lorem upsum Dolor</div>
+                        </div>
+                        <div class="footer__item-executor">Lorem by <strong>Lorem upsum Dolor</strong></div>
+                        <div class="footer__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae egestas dolor 
+                        </div>
+                        <div class="footer__item-format"><strong>Format:</strong> scv</div>
+                        <a href="#" class="footer__item-link">Open</a>
+                        <div class="footer__item-slogan">Lorem</div>
+                        <div class="footer__item-slogan-text">No fees & no time restricrions</div>
+                        <input type="button" value="View Details..." class="footer__item-button">
+                </div>
+            </div>
+        </footer>
+   

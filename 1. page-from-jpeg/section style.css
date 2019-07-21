@@ -1,18 +1,162 @@
 section {
     max-width: 984px;
     position: relative;
+    margin-bottom: 48px;
+    margin-top: 12px;
 }
 
 .section__logo {
     position: absolute;
-    top: -71px;
+    top: -83px;
     left: 0;
     height: 142px;
     border-radius: 50%;
 }
 
-h1 {
+.section__h1 {
     font-size: 36px;
     margin: 48px 0;
     padding: 48px 0 0 0;
+    font-weight: normal;
+    line-height: 45px;
+}
+
+.section__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 48px;
+}
+
+.section__h2 {
+    font-size: 21px;
+    font-weight: normal;
+    margin: 6px 0 30px 1px;
+    line-height: 21px;
+}
+
+.section__text {
+    font-size: 18px;
+    font-weight: normal;
+    color: #757575;
+    line-height: 24px;
+    margin: 6px 0;
+}
+
+.section__content-description {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 730px;
+}
+
+.section__contacts {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 180px;
+}
+
+.section__contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section__contact-person {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 0px 12px 3px;
+}
+
+.section__contact-person-avatar {
+    border-radius: 50%;
+    height: 48px;
+    margin-right: 12px;
+}
+
+.section__contact-person-data {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.section__contact-link {
+    text-decoration: none;
+    color: #1A587A;
+    font-size: 18px;
+}
+
+.section__contact-link-web {
+    text-decoration: none;
+    color: #1A587A;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.section__follow-us {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.section__h2-follow {
+    font-size: 21px;
+    font-weight: normal;
+    margin: 6px 0 12px 2px;
+    line-height: 23px;
+}
+
+.section__follow-link {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+
+.section__contact-icons {
+    height:24px;
+    margin: 0 6px;
+}
+
+.section__area-of-focus {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.section__areas {
+    max-height: 90px;
+    display: flex;
+    flex-flow: column wrap;
+    width: fit-content;
+}
+
+.section__area-icon_internet {
+    height: 18px;
+    background-color: #5A4D99; 
+    padding: 6px;
+}
+
+.section__area-icon_handshake {
+    height: 18px;
+    background-color:#1A587A;
+    padding: 6px;
+}
+
+.section__area-icons_culture {
+    height: 18px;
+    background-color:#BFCC36;
+    padding: 6px;
+}
+
+.section__area-items {
+    display: flex;
+    flex-direction: row;
+    margin: 6px;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.section__area-item-names {
+    padding: 6px;
+    background-color: #f8f8f8; 
 }

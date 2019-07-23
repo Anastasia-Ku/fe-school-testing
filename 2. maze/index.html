@@ -410,8 +410,10 @@
                 movePiece(position);
             },
             amIFree() {
-                return isPieceOut();
+				return position.left == 0 && position.top == 9;
+                // return isPieceOut();
             }
+            
         };
 
         stepper = setInterval(() => {
@@ -452,11 +454,17 @@
 
     function escapePlan() {
         const piece = createPiece();
-        // piece.isThereWay();
-        // piece.goForward();
-        // piece.turnRight();
-        // piece.turnLeft();
-        // piece.amIFree();
+        while (!piece.amIFree()) {
+            if (piece.isThereWay()) {
+                piece.goForward();
+            } else {
+                piece.turnRight();
+                if (!piece.isThereWay()) {
+                    piece.turnLeft();
+                    piece.turnLeft();
+                } 
+            }    
+        }
     }
 
     function main() {
